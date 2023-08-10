@@ -35,11 +35,11 @@ export const ContactForm = ({ onAddContact }) => {
 
         <label>
           Number
-          <Field name="number" placeholder="Ввидите номер..." />
+          <Field name="number" type="tel" placeholder="Ввидите номер..." />
           <ErrorMessage name="number" component="div" />
         </label>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Add contact</button>
       </Form>
     </Formik>
   );
