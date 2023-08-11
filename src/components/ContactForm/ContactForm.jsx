@@ -1,6 +1,13 @@
-import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
+import { Formik } from 'formik';
+import {
+  FormAddContact,
+  InputField,
+  Label,
+  ButtonAddContact,
+  ErrorMessageWrapper,
+} from './ContactForm.styled';
 
 const phoneRegExp =
   '\\+?\\d{1,4}?[ .\\-\\s]?\\(?\\d{1,3}?\\)?[ .\\-\\s]?\\d{1,4}[ .\\-\\s]?\\d{1,4}[ .\\-\\s]?\\d{1,9}';
@@ -26,21 +33,21 @@ export const ContactForm = ({ onAddContact }) => {
         actions.resetForm();
       }}
     >
-      <Form>
-        <label>
+      <FormAddContact>
+        <Label>
           Name
-          <Field name="name" placeholder="Ввидите имя..." />
-          <ErrorMessage name="name" component="div" />
-        </label>
+          <InputField name="name" placeholder="Ввидите имя..." />
+          <ErrorMessageWrapper name="name" component="div" />
+        </Label>
 
-        <label>
+        <Label>
           Number
-          <Field name="number" type="tel" placeholder="Ввидите номер..." />
-          <ErrorMessage name="number" component="div" />
-        </label>
+          <InputField name="number" type="tel" placeholder="Ввидите номер..." />
+          <ErrorMessageWrapper name="number" component="div" />
+        </Label>
 
-        <button type="submit">Add contact</button>
-      </Form>
+        <ButtonAddContact type="submit">Add contact</ButtonAddContact>
+      </FormAddContact>
     </Formik>
   );
 };
