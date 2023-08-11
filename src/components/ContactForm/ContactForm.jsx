@@ -36,13 +36,13 @@ export const ContactForm = ({ onAddContact }) => {
       <FormAddContact>
         <Label>
           Name
-          <InputField name="name" placeholder="Ввидите имя..." />
+          <InputField name="name" placeholder="Enter Name" />
           <ErrorMessageWrapper name="name" component="div" />
         </Label>
 
         <Label>
           Number
-          <InputField name="number" type="tel" placeholder="Ввидите номер..." />
+          <InputField name="number" type="tel" placeholder="Enter Phone" />
           <ErrorMessageWrapper name="number" component="div" />
         </Label>
 

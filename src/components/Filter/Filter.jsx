@@ -1,12 +1,15 @@
+import { LabelSearchContact, FilterInput } from './Filter.styled';
+
 export const Filter = ({ value, onChange }) => {
   return (
-    <label>
+    <LabelSearchContact>
       Find contact by name
-      <input
+      <FilterInput
         type="text"
         value={value}
         onChange={evt => onChange(evt.target.value)}
+        placeholder="Search Name"
       />
-    </label>
+    </LabelSearchContact>
   );
 };

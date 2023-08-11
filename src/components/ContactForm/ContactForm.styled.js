@@ -10,56 +10,47 @@ export const FormAddContact = styled(Form)`
 
 export const InputField = styled(Field)`
   border: 0;
-  outline: 1px solid #08215a;
+  outline: 1px solid #4e0963;
   border-radius: 3px;
   min-width: 130px;
-  height: 20px;
+  height: 24px;
   margin: 8px;
-  &:last-child {
-    padding-left: 5px;
-  }
+  padding-left: 5px;
 `;
 
 export const Label = styled.label`
   display: block;
-  color: #f51616;
+  color: #4e0963;
+  font-size: 18px;
+  font-weight: 500;
 `;
 
 export const ButtonAddContact = styled.button`
-  background: #a99d9c;
-  border: 1px solid #a99d9c;
+  background: #d93bd6;
+  border: 1px solid #d93bd6;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 4px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: #fce803;
   display: inline-block;
-  font-family: nunito, roboto, proxima-nova, 'proxima nova', sans-serif;
-
   outline: 0;
-  padding: 12px 14px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
   text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
 
   &:hover,
   &:active {
     background-color: initial;
-    background-position: 0 0;
-    color: #ff4742;
+    color: #4e0963;
   }
 
   &:active {
     opacity: 0.5;
   }
-  padding: 10px 25px;
-  margin-top: 20px;
-  margin-bottom: 15px;
 `;
 
 export const ErrorMessageWrapper = styled(ErrorMessage)`
-  color: green;
+  color: red;
+  font-weight: 500;
 `;

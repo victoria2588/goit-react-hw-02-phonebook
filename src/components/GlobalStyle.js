@@ -7,12 +7,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-	background: linear-gradient(to right, #a1ffce, #faffd1);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	background-color: #fac8f1;
 	margin: 0;
-	color: #000;
   }
 
 code {
